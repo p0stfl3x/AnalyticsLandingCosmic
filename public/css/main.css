@@ -93,6 +93,12 @@ img {
 a {
   text-decoration: none;
   color: var(--text-color-primary);
+  transition-property: all;
+  transition-duration: 350ms;
+}
+
+a:hover {
+  filter: brightness(1.1);
 }
 
 ul {
@@ -159,7 +165,6 @@ ul {
     0 100%
   );
 }
-
 
 .container_angled_bottom::after {
   content: '';
@@ -363,13 +368,13 @@ ul {
   display: flex;
 }
 
-.fa-twitter {
-  margin: 0 2.5rem;
+.fa-brands {
+  margin-left: 2.5rem;
 }
 
 @media only screen and (max-width: 374px) {
-  .fa-twitter {
-    margin: 0 1.5rem;
+  .fa-brands {
+    margin: 1.5rem;
   }
 }
 
@@ -450,6 +455,8 @@ ul {
   border: 1px solid transparent;
   border-radius: var(--border-radius-button);
   padding: 1rem;
+  transition-property: filter;
+  transition-duration: 350ms;
 }
 
 .button_promoted {
@@ -515,7 +522,6 @@ ul {
     text-align: center;
   }
 }
-
 
 @media only screen and (min-width: 640px) {
   .hero__description {
@@ -792,7 +798,6 @@ ul {
   display: flex;
   justify-content: center;
   margin: 0 -1.2rem;
-  
 }
 
 @media only screen and (min-width: 640px) {
@@ -827,7 +832,6 @@ ul {
 /**
  * Pricing Plan block
  */
-
 .pricing-plan {
   display: flex;
   flex-direction: column;
@@ -870,11 +874,6 @@ ul {
 .pricing-plan__period {
   font-size: 0.81rem;
   margin-bottom: 2.25rem;
-}
-
-/*promoted*/
-.pricing-plan_promoted {
-
 }
 
 @media only screen and (min-width: 768px) {
